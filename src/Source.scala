@@ -1,8 +1,5 @@
 class Source(source:String) {
 
-    import scala.io.Source
-    import java.io.InputStream
-
     private var currPos:Int = 0
     private var lineNum:Int = 1
     private var linePos:Int = 0

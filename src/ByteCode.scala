@@ -1,3 +1,5 @@
+
+
 /**
  * バイトコード不正例外.
  */
@@ -8,10 +10,9 @@ class IllegalByteCodeException(cause:String) extends RuntimeException(cause)
  */
 class ByteCode {
 
-    import scala.collection.mutable.ListBuffer
-    import java.io.OutputStream
-    import java.io.OutputStreamWriter
-    import java.io.BufferedWriter
+    import java.io.{BufferedWriter, OutputStream, OutputStreamWriter}
+
+import scala.collection.mutable.ListBuffer
     
     private var insts = new ListBuffer[Inst]()
 
@@ -36,7 +37,8 @@ class ByteCode {
 object ByteCode {
 
     import java.io.InputStream
-    import scala.io.Source
+
+import scala.io.Source
 
     def load(is:InputStream):ByteCode = {
 

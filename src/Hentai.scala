@@ -1,7 +1,6 @@
 object Hentai {
 
-    import java.io.File
-    import java.io.FileInputStream
+    import java.io.{File, FileInputStream}
 
     def printUsage() {
         println("Usage: FizzBuzzC <source file>")
